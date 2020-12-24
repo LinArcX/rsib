@@ -1,0 +1,31 @@
+# Specify compiler
+CC=cl.exe
+
+# Specify linker
+LINK=link.exe
+
+#.PHONY: all release debug clean
+
+# Build all target
+all : release
+
+# Link the object files and dependent libraries into a binary
+release : strepl.o
+	$(LINK) /OUT:.\release\strepl.exe .\release\strepl.o
+
+debug : strepl_d.o
+	$(LINK) /OUT:.\debug\strepl.exe .\debug\strepl_d.o
+
+# Compile the source files into object files
+strepl.o : .\src\strepl.cpp
+	mkdir release
+	$(CC) /EHsc .\src\strepl.cpp /Fo.\release\strepl.o
+
+strepl_d.o : .\src\strepl.cpp
+	mkdir debug
+	$(CC) /Z7 /EHsc .\src\strepl.cpp /Fo.\debug\strepl_d.o /link
+
+# Clean target
+clean :
+	del .\debug\strepl_d.o .\debug\strepl.exe
+	del .\release\strepl.o .\release\strepl.exe
