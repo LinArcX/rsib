@@ -9,7 +9,7 @@
 using namespace std;
 
 string change_file_name(string file_name){
-	int c = file_name.rfind('.');
+    int c = file_name.rfind('.');
 	string new_file_name;
 	if (file_name.npos != c) {
 		new_file_name = file_name.substr(0, c) + "__result" + file_name.substr(c);
@@ -21,16 +21,14 @@ string change_file_name(string file_name){
 }
 
 int main(int argc, char ** argv) {
-	fputs("\n"
-		"    --> strepl 1.0.0 <--    \n"
+	fputs("**** strepl: v1.0.0 ****\n"
 		"By: LinArcX\n"
 		"E-Mail: linarcx@gmail.com\n"
 		"WEB:    https://github.com/LinArcX\n"
 		"\n", stdout);
 
 	if (argc < 2) {
-		printf("\n"
-			"Usage: %s <binary file name>\n"
+		printf("Usage: %s <binary-file>\n"
 			"\n", argv[0]);
 		exit(1);
 	}

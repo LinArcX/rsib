@@ -23,5 +23,8 @@ Replace strings in binary files.
 
     It will create __strepl.exe__ in _release_ directory.
 
+# Append strepl.exe to PATH environment variable
+`[Environment]::SetEnvironmentVariable("PATH", "$ENV:PATH;D:\workspace\c++\cpp\projects\active\strepl\release", "MACHINE")`
+
 ## License
 ![License](https://img.shields.io/github/license/LinArcX/strepl.svg)

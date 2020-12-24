@@ -19,7 +19,7 @@ debug : strepl_d.o
 # Compile the source files into object files
 strepl.o : .\src\strepl.cpp
 	mkdir release
-	$(CC) /EHsc .\src\strepl.cpp /Fo.\release\strepl.o
+	$(CC) /c .\src\strepl.cpp /Fo.\release\strepl.o
 
 strepl_d.o : .\src\strepl.cpp
 	mkdir debug
