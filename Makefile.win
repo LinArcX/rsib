@@ -10,22 +10,22 @@ LINK=link.exe
 all : release
 
 # Link the object files and dependent libraries into a binary
-release : strepl.o
-	$(LINK) /OUT:.\release\strepl.exe .\release\strepl.o
+release : rsib.o
+	$(LINK) /OUT:.\release\rsib.exe .\release\rsib.o
 
-debug : strepl_d.o
-	$(LINK) /OUT:.\debug\strepl.exe .\debug\strepl_d.o
+debug : rsib_d.o
+	$(LINK) /OUT:.\debug\rsib.exe .\debug\rsib_d.o
 
 # Compile the source files into object files
-strepl.o : .\src\strepl.cpp
+rsib.o : .\src\rsib.cpp
 	mkdir release
-	$(CC) /c .\src\strepl.cpp /Fo.\release\strepl.o
+	$(CC) /c .\src\rsib.cpp /Fo.\release\rsib.o
 
-strepl_d.o : .\src\strepl.cpp
+rsib_d.o : .\src\rsib.cpp
 	mkdir debug
-	$(CC) /Z7 /EHsc .\src\strepl.cpp /Fo.\debug\strepl_d.o /link
+	$(CC) /Z7 /EHsc .\src\rsib.cpp /Fo.\debug\rsib_d.o /link
 
 # Clean target
 clean :
-	del .\debug\strepl_d.o .\debug\strepl.exe
-	del .\release\strepl.o .\release\strepl.exe
+	del .\debug\rsib_d.o .\debug\rsib.exe
+	del .\release\rsib.o .\release\rsib.exe

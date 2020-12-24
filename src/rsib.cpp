@@ -21,7 +21,7 @@ string change_file_name(string file_name){
 }
 
 int main(int argc, char ** argv) {
-	fputs("**** strepl: v1.0.0 ****\n"
+	fputs("**** rsib: v1.0.0 ****\n"
 		"By: LinArcX\n"
 		"E-Mail: linarcx@gmail.com\n"
 		"WEB:    https://github.com/LinArcX\n"

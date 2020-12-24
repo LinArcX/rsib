@@ -1,8 +1,8 @@
 <h4 align="center">
-  <img src="https://img.shields.io/github/languages/top/LinArcX/strepl.svg"/>  <img src="https://img.shields.io/github/repo-size/LinArcX/strepl.svg"/>  <img src="https://img.shields.io/github/tag/LinArcX/strepl.svg?colorB=green"/>
+  <img src="https://img.shields.io/github/languages/top/LinArcX/rsib.svg"/>  <img src="https://img.shields.io/github/repo-size/LinArcX/rsib.svg"/>  <img src="https://img.shields.io/github/tag/LinArcX/rsib.svg?colorB=green"/>
 </h4>
 
-# strepl
+# rsib
 Replace strings in binary files.
 
 # compile
@@ -21,10 +21,10 @@ Replace strings in binary files.
 2. Change to root directory of the project.
 3. `nmake.exe .\Makefile.win`
 
-    It will create __strepl.exe__ in _release_ directory.
+    It will create __rsib.exe__ in _release_ directory.
 
-# Append strepl.exe to PATH environment variable
-`[Environment]::SetEnvironmentVariable("PATH", "$ENV:PATH;D:\workspace\c++\cpp\projects\active\strepl\release", "MACHINE")`
+# Append rsib.exe to PATH environment variable
+`[Environment]::SetEnvironmentVariable("PATH", "$ENV:PATH;D:\workspace\c++\cpp\projects\active\rsib\release", "MACHINE")`
 
 ## License
-![License](https://img.shields.io/github/license/LinArcX/strepl.svg)
+![License](https://img.shields.io/github/license/LinArcX/rsib.svg)
