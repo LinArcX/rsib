@@ -5,16 +5,18 @@
 # strepl
 Replace strings in binary files.
 
-# Build
-1. First, you should load appropriate environment variables.(that contains the address of cl.exe, linker.exe, ...)
-To do that you have two options:
+# compile
+1. First, you should load appropriate environment variables.(that contains the address of `cl.exe`, `linker.exe`, ...).
+
+    To do that you have two options:
+
     1.1. Via CMD:
 
-        `cmd.exe /E:ON /V:ON /k .\msvc2019-64bit.cmd`
+        cmd.exe /E:ON /V:ON /k .\msvc2019-64bit.cmd
 
     1.2. Via PowerShell:
 
-        `Invoke-CmdScript "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"`
+        Invoke-CmdScript "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
 
 2. Change to root directory of the project.
 3. `nmake.exe .\Makefile.win`
